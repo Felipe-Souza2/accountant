@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super contador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Let's count</h1>
+  </header>
+  <section>
+
+    <div>
+      <label for="start">Home:</label>
+      <input type="number" name="start" id="start">
+    </div>
+
+    <div>
+      <label for="end">End:  </label>
+      <input type="number" name="end" id="end">
+    </div>
+
+    <div>
+      <label for="end">Step:</label>
+      <input type="number" name="stepNumber" id="stepNumber">
+    </div>
+
+    <input id="click"  type="button" value="Count" onclick="execute()">
+
+    <div id="result">
+      Preparing the count ....
+    </div>
+  </section>
+  <footer>
+    <p>&copy;curso em video</p>
+  </footer>
+   <script src="script.js" type="module"></script>
+</body>
+</html>
