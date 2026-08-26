@@ -5,10 +5,14 @@ export function isStartInvalid(start) {
   return false
 }
 
+export function isEndInvalid(end) {
+  if (end === '') return true
+  return false
+}
+
 export function isStepInvalid(step) {
+  const numberStep = Number(step)
   if (step === '') return true
-  if (step === '0' || step ===Number('0')) return true
-  if (step === MIN_STEP || step < MIN_STEP) return true
-  
+  if (numberStep === MIN_STEP ||numberStep < MIN_STEP) return true
   return false
 }
